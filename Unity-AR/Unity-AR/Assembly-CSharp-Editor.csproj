@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{618494A1-0038-9EB9-71DF-1DD95EC976C9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_1_1;UNITY_2017_1;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_RUNTIME_GI;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_NETWORK;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_IOS_NATIVE_CRASH_REPORTING;PLAYERCONNECTION_LISTENS_FIXED_PORT;DEBUGGER_LISTENS_FIXED_PORT;PLATFORM_SUPPORTS_ADS_ID;SUPPORT_ENVIRONMENT_VARIABLES;PLATFORM_SUPPORTS_PROFILER;PLATFORM_HAS_NO_SUPPORT_FOR_BUCKET_ALLOCATOR;STRICTCPP_NEW_DELETE_SIGNATURES;HAS_NEON_SKINNIG;UNITY_GFX_USE_PLATFORM_VSYNC;UNITY_INPUT_SIMULATE_EVENTS;PLATFORM_ALWAYS_USES_STDOUT_FOR_LOG;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;PLATFORM_IOS;UNITY_IOS;PLATFORM_IPHONE;UNITY_IPHONE;UNITY_IPHONE_API;SUPPORT_MULTIPLE_DISPLAYS;ENABLE_IL2CPP;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;VUFORIA_IOS_SETTINGS;CROSS_PLATFORM_INPUT;MOBILE_INPUT;ENABLE_IOS_ON_DEMAND_RESOURCES;ENABLE_IOS_APP_SLICING;UNITY_HAS_GOOGLEVR;ENABLE_MONO</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Bird Flocks\Scripts\Editor\FlockChildEditor.cs" />
+     <Compile Include="Assets\Bird Flocks\Scripts\Editor\FlockControllerEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiAboutWindow.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiAerodynamicConstraintsEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiBendingConstraintsEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiBoneEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiClothParticleHandles.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiColliderEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiDistanceConstraintsEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiDraggableIcon.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiEditorUtils.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiEmitterEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiEmitterMaterialEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiEmitterShapeEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiParticleActorEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiParticleBakerEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiParticleCacheEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiParticleHandleEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiParticleRendererEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiPinConstraintsEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiSolverEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiSplineHandles.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiStitcherEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiTetherConstraintsEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiVolumeConstraintsEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\PreviewHelpers.cs" />
+     <Compile Include="Assets\Vuforia\Editor\Scripts\ComponentFactoryStarter\ComponentFactoryStarter.cs" />
+     <Compile Include="Assets\Vuforia\Editor\Scripts\ExtensionImport.cs" />
+     <Compile Include="Assets\Vuforia\Editor\Scripts\PostProcessBuildPlayer.cs" />
+     <Compile Include="Assets\Vuforia\Editor\Scripts\Unzipper\SharpZipLibUnzipper.cs" />
+     <Compile Include="Assets\Vuforia\Editor\Scripts\VuforiaConfigurationEditor.cs" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\FluidColorsOpaque.shader" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\ScreenSpaceFluids Pro\Resources\Shaders\SSFPro_ComposeFluidHQ2.shader" />
+     <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
+     <None Include="Assets\Bird Flocks\Shaders\StandardNoCull.shader" />
+     <None Include="Assets\Obi\Plugins\libOni.bundle\Contents\Resources\CMakeLists.txt" />
+     <None Include="Assets\link.xml" />
+     <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
+     <None Include="Assets\Obi\Editor\Resources\EditorParticle.shader" />
+     <None Include="Assets\ScreenSpaceFluids Pro\Resources\Shaders\SSFPro_ThicknessShaderHQ.shader" />
+     <None Include="Assets\Obi\Editor\Resources\FlatSurfaceShader.shader" />
+     <None Include="Assets\Vuforia\Shaders\RenderVideoBackground.shader" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\FluidColorsBlend.shader" />
+     <None Include="Assets\Bird Flocks\Shaders\Normal-Diffuse-NoCull.shader" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\ParticleShader.shader" />
+     <None Include="Assets\readme_SDK.txt" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\DielectricFluidShader.shader" />
+     <None Include="Assets\Obi\Editor\Resources\EditorLineShader.shader" />
+     <None Include="Assets\ScreenSpaceFluids Pro\Resources\Shaders\SSF_DepthShaderDensity.shader" />
+     <None Include="Assets\ScreenSpaceFluids Pro\Resources\Shaders\SSFPro_ThicknessShaderHQ2.shader" />
+     <None Include="Assets\ScreenSpaceFluids Pro\ScreenSpaceFluids\_SSF_ReadMe.txt" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\StandardBackfaces.shader" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\ObiParticles.cginc" />
+     <None Include="Assets\ScreenSpaceFluids Pro\Resources\Shaders\SSF_ThicknessShader.shader" />
+     <None Include="Assets\ScreenSpaceFluids Pro\Resources\Shaders\SSFPro_ComposeFluidHQ.shader" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\OpaqueFluidShader.shader" />
+     <None Include="Assets\Vuforia\Shaders\VideoBackground.shader" />
+     <None Include="Assets\ScreenSpaceFluids Pro\ScreenSpaceFluids\Resources\Shaders\SSF_BlurDepth.shader" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\NormalReconstruction.shader" />
+     <None Include="Assets\license_3rdpartynotice.txt" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\SimpleParticleShader.shader" />
+     <None Include="Assets\Vuforia\Editor\WebcamProfiles\profiles.xml" />
+     <None Include="Assets\Vuforia\Shaders\DepthMask.shader" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\FluidShader.shader" />
+     <None Include="Assets\Obi\Editor\Resources\TopologyBorders.shader" />
+     <None Include="Assets\ScreenSpaceFluids Pro\Resources\Shaders\SSF_ComposeFluidHQ.shader" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\FluidThickness.shader" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\LitParticles.shader" />
+     <None Include="Assets\ScreenSpaceFluids Pro\Resources\Shaders\SSFPro_BlurDepthHQ.shader" />
+     <None Include="Assets\Obi\Editor\Resources\EditorParticleRadius.shader" />
+     <None Include="Assets\StreamingAssets\Vuforia\Unity-AR.xml" />
+     <None Include="Assets\ScreenSpaceFluids Pro\ScreenSpaceFluids\Resources\Shaders\SSF_DepthShader.shader" />
+     <None Include="Assets\Obi\Editor\Resources\PropertyGradientMaterial.shader" />
+     <None Include="Assets\Vuforia\Shaders\ClippingMask.shader" />
+     <None Include="Assets\ScreenSpaceFluids Pro\_SSFPro_ReadMe.txt" />
+     <None Include="Assets\Vuforia\Shaders\BrightTexture.shader" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\ScreenSpaceCurvatureFlow.shader" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\UnityStandardCoreForwardSimpleBackfaces.cginc" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\FluidShaderFlat.shader" />
+     <None Include="Assets\ScreenSpaceFluids Pro\Resources\Shaders\SSFPro_DepthShaderHQ.shader" />
+     <None Include="Assets\Bird Flocks\Included Assets\Unluck Software Feather Particles\Feathers - Readme.txt" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\UnityStandardCoreBackfaces.cginc" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\UnityStandardCoreForwardBackfaces.cginc" />
+     <None Include="Assets\ScreenSpaceFluids Pro\ScreenSpaceFluids\Resources\Shaders\SSF_SpherePointsShader.shader" />
+     <None Include="Assets\ScreenSpaceFluids Pro\ScreenSpaceFluids\Resources\Shaders\SSF_ComposeFluid.shader" />
+     <None Include="Assets\Vuforia\Shaders\Text3D.shader" />
+     <None Include="Assets\Bird Flocks\Bird Flock Readme.txt" />
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Analytics">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TestRunner">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Advertisements">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Timeline">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TreeEditor">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.HoloLens">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Purchasing">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityPurchasing/Editor/UnityEditor.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.VR">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions">
+ <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.OSXStandalone.Extensions">
+ <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="Vuforia.UnityExtensions.Editor">
+ <HintPath>/Users/DanwenYang/Desktop/CGUI/Unity-AR/Unity-AR/Assets/Vuforia/Editor/Scripts/Vuforia.UnityExtensions.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Vuforia.UnityExtensions">
+ <HintPath>/Users/DanwenYang/Desktop/CGUI/Unity-AR/Unity-AR/Assets/Vuforia/Scripts/Internal/Vuforia.UnityExtensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Common">
+ <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{D7811722-CE96-BD2D-4A28-05C4B882C12B}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript.csproj">
+      <Project>{C09F5AFD-2A91-CD83-B2E5-A62CB800AACC}</Project>      <Name>Assembly-UnityScript</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript-Editor-firstpass.csproj">
+      <Project>{FE31B163-145B-A396-736B-80D513972B46}</Project>      <Name>Assembly-UnityScript-Editor-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
