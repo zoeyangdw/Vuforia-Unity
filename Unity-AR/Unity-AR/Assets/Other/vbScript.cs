@@ -11,13 +11,8 @@ public class vbScript : MonoBehaviour, IVirtualButtonEventHandler {
 	private GameObject stopButton;
 	private GameObject emitter;
 	private ObiEmitter emi;
-	private GameObject audio;
 	private moveOnPath move;
 	private float speed;
-	public float moveStartParticles;
-	public float audioStartParticles;
-	private bool isPlane = false;
-	private bool isAudio = false;
 
 	// Use this for initialization
 	void Start () {
@@ -26,7 +21,7 @@ public class vbScript : MonoBehaviour, IVirtualButtonEventHandler {
 		emitter = GameObject.Find ("Emitter");
 		startButton = GameObject.Find ("startButton");
 		stopButton = GameObject.Find ("stopButton");
-		audio = GameObject.Find ("Audio");
+		//audio = GameObject.Find ("Audio");
 		move = GameObject.Find ("PaperAirplane").GetComponent<moveOnPath> ();
 
 		emi = emitter.GetComponent<ObiEmitter> ();
@@ -34,24 +29,11 @@ public class vbScript : MonoBehaviour, IVirtualButtonEventHandler {
 		emi.speed = 0;
 		//stopButton.GetComponent<Renderer>().enabled = false;
 		stopButton.active = false;
-
-
-
-//		move.start = true;
-//		Debug.Log (move.start);
 		startButton.active = true;
-
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		//Debug.Log (emi.ActiveParticles);
-		if (emi.ActiveParticles > moveStartParticles && isPlane == false) {
-			AirPlane ();
-		}
-		if (emi.ActiveParticles > audioStartParticles && isAudio == false) {
-			PlayAudio ();
-		}
 		
 	}
 
@@ -67,23 +49,10 @@ public class vbScript : MonoBehaviour, IVirtualButtonEventHandler {
 			startButton.active = false;
 			stopButton.active = true;
 		}
-
 	}
 
 	public void OnButtonReleased(VirtualButtonAbstractBehaviour vb) {
 
-	}
-
-	public void PlayAudio(){
-		Debug.Log ("audio");
-		isAudio = true;
-		audio.GetComponent<AudioSource>().Play();
-	}
-
-	public void AirPlane(){
-		Debug.Log ("move");
-		isPlane = true;
-		move.start = true;
 	}
 
 }

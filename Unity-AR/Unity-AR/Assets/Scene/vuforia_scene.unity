@@ -18889,7 +18889,8 @@ MonoBehaviour:
   speed: 11
   rotationSpeed: 10
   pathName: 
-  start: 0
+  isPlane: 0
+  moveStartParticles: 800
 --- !u!1 &607999541
 GameObject:
   m_ObjectHideFlags: 0
@@ -19471,8 +19472,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 317218b0837c9479287ae37f05f421a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveStartParticles: 800
-  audioStartParticles: 1600
 --- !u!1 &1281098487
 GameObject:
   m_ObjectHideFlags: 0
@@ -19713,6 +19712,7 @@ GameObject:
   - component: {fileID: 1712919243}
   - component: {fileID: 1712919242}
   - component: {fileID: 1712919241}
+  - component: {fileID: 1712919244}
   m_Layer: 0
   m_Name: Audio
   m_TagString: Untagged
@@ -19825,6 +19825,18 @@ Transform:
   m_Father: {fileID: 1813197663}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1712919244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1712919240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 309160970112547aba3ec1ab12db381d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioStartParticles: 1600
 --- !u!1001 &1747398934
 Prefab:
   m_ObjectHideFlags: 0

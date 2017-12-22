@@ -157,6 +157,7 @@
      <Compile Include="Assets\Obi\Scripts\Utils\ObiParticleHandle.cs" />
      <Compile Include="Assets\Obi\Scripts\Utils\ObiProfiler.cs" />
      <Compile Include="Assets\Obi\Scripts\Utils\ObiUtils.cs" />
+     <Compile Include="Assets\Other\AudioScript.cs" />
      <Compile Include="Assets\Other\editPath.cs" />
      <Compile Include="Assets\Other\moveOnPath.cs" />
      <Compile Include="Assets\Other\vbScript.cs" />
@@ -284,7 +285,7 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
  </Reference>
  <Reference Include="Vuforia.UnityExtensions">
- <HintPath>/Users/DanwenYang/Desktop/CGUI/Unity-AR/Unity-AR/Assets/Vuforia/Scripts/Internal/Vuforia.UnityExtensions.dll</HintPath>
+ <HintPath>/Users/DanwenYang/Documents/GitHub/Vuforia-Unity/Unity-AR/Unity-AR/Assets/Vuforia/Scripts/Internal/Vuforia.UnityExtensions.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
